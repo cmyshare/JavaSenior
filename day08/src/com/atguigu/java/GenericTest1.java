@@ -6,13 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** 如何自定义泛型结构：泛型类、泛型接口；泛型方法。
- *
- * 1. 关于自定义泛型类、泛型接口：
- *
- *
- *
- * @author shkstart
- * @create 2019 上午 11:09
+ * 1. 自定义泛型类：public class SubOrder1<T>
+ * 2. 自定义泛型接口：public interface SubOrder1<T>
+ * 3. 自定义泛型方法：public static <E>  List<E> copyFromArrayToList()
+ * 4. 自定义泛型参数：E[] arr、T orderT、
  */
 public class GenericTest1 {
 
@@ -23,32 +20,38 @@ public class GenericTest1 {
         Order order = new Order();
         order.setOrderT(123);
         order.setOrderT("ABC");
+        System.out.println(order.toString());
+
 
         //建议：实例化时指明类的泛型
         Order<String> order1 = new Order<String>("orderAA",1001,"order:AA");
-
         order1.setOrderT("AA:hello");
+        System.out.println(order1.toString());
 
     }
 
     @Test
     public void test2(){
+        //实例化 不是泛型类
         SubOrder sub1 = new SubOrder();
         //由于子类在继承带泛型的父类时，指明了泛型类型。则实例化子类对象时，不再需要指明泛型。
         sub1.setOrderT(1122);
+        System.out.println(sub1.toString());
 
+        //实例化 是泛型类 指定了参数类型
         SubOrder1<String> sub2 = new SubOrder1<>();
         sub2.setOrderT("order2...");
+        System.out.println(sub2.toString());
     }
 
     @Test
     public void test3(){
-
         ArrayList<String> list1 = null;
         ArrayList<Integer> list2 = new ArrayList<Integer>();
         //泛型不同的引用不能相互赋值。
 //        list1 = list2;
 
+        //泛型相同可以赋值
         Person p1 = null;
         Person p2 = null;
         p1 = p2;
@@ -62,8 +65,8 @@ public class GenericTest1 {
         Order<String> order = new Order<>();
         Integer[] arr = new Integer[]{1,2,3,4};
         //泛型方法在调用时，指明泛型参数的类型。
-        List<Integer> list = order.copyFromArrayToList(arr);
+        List<Integer> integerList = order.copyFromArrayToList(arr);
 
-        System.out.println(list);
+        System.out.println(integerList);
     }
 }
