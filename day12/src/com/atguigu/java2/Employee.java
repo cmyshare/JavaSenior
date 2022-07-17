@@ -1,7 +1,7 @@
 package com.atguigu.java2;
 
 /**
- * @author shkstart 邮箱：shkstart@126.com
+ * @author cmy 邮箱：shkstart@126.com
  */
 public class Employee {
 

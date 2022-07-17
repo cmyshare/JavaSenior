@@ -6,7 +6,7 @@ import java.util.List;
  * 创建 DAO 类的对象， 分别调用其 save、get、update、list、delete 方法来操作 User 对象，
  使用 Junit 单元测试类进行测试。
 
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:45
  */
 public class DAOTest {

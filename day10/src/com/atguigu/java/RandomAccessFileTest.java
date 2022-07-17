@@ -16,7 +16,7 @@ import java.io.RandomAccessFile;
  *
  * 4. 可以通过相关的操作，实现RandomAccessFile“插入”数据的效果
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:18
  */
 public class RandomAccessFileTest {

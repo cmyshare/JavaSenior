@@ -9,7 +9,7 @@ import java.lang.reflect.Modifier;
 /**
  * 获取当前运行时类的属性结构
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:23
  */
 public class FieldTest {

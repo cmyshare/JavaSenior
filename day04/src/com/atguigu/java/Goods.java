@@ -2,7 +2,7 @@ package com.atguigu.java;
 
 /**
  * 商品类
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 4:52
  */
 public class Goods implements  Comparable{
@@ -55,6 +55,7 @@ public class Goods implements  Comparable{
                 return -1;
             }else{
 //                return 0;
+               //加负号为降序
                return -this.name.compareTo(goods.name);
             }
             //方式二：

@@ -1,9 +1,11 @@
 package com.atguigu.java;
 
-/**
- * @author shkstart
+/** 异常类不能是泛型的
+ * @author cmy
  * @create 2019 上午 11:29
  */
-//异常类不能声明为泛型类
+
+//// 异常类不能是泛型的
 //public class MyException<T> extends Exception{
+//
 //}

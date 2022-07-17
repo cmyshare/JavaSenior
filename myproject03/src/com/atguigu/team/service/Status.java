@@ -2,7 +2,7 @@ package com.atguigu.team.service;
 /**
  * 
  * @Description 表示员工的状态
- * @author shkstart  Email:shkstart@126.com
+ * @author cmy  Email:shkstart@126.com
  * @version 
  * @date 2019年2月12日上午10:05:39
  *

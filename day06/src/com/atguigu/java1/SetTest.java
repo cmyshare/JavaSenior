@@ -25,7 +25,7 @@ import java.util.Set;
  *      重写两个方法的小技巧：对象中用作 equals() 方法比较的 Field，都应该用来计算 hashCode 值。
  *
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:40
  */
 public class SetTest {

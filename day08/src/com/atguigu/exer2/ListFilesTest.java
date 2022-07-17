@@ -6,7 +6,7 @@ import java.io.File;
 	拓展1：并计算指定目录占用空间的大小
 	拓展2：删除指定文件目录及其下的所有文件
 
- * @author shkstart 邮箱：shkstart@126.com
+ * @author cmy 邮箱：shkstart@126.com
  * @version  创建时间：2019年2月23日  上午1:55:31
  *
  */

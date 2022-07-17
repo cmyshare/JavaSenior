@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 /**
  * 测试Stream的中间操作
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 4:42
  */
 public class StreamAPITest1 {

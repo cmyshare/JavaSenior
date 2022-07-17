@@ -7,7 +7,7 @@ import java.util.Random;
 /**
  * 通过发射创建对应的运行时类的对象
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 2:32
  */
 public class NewInstanceTest {

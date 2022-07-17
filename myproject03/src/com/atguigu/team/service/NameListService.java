@@ -14,7 +14,7 @@ import static com.atguigu.team.service.Data.*;
 /**
  * 
  * @Description 负责将Data中的数据封装到Employee[]数组中，同时提供相关操作Employee[]的方法。
- * @author shkstart  Email:shkstart@126.com
+ * @author cmy  Email:shkstart@126.com
  * @version v1.0
  * @date 2019年2月12日上午10:17:14
  *
@@ -72,7 +72,7 @@ public class NameListService {
 	/**
 	 * 
 	 * @Description 获取指定index上的员工的设备
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日上午10:31:01
 	 * @param i
 	 * @return
@@ -100,7 +100,7 @@ public class NameListService {
 	/**
 	 * 获取当前所有员工。
 	 * @Description 
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日上午10:47:08
 	 * @return
 	 */
@@ -110,7 +110,7 @@ public class NameListService {
 	/**
 	 * 
 	 * @Description 获取指定ID的员工对象。
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日上午10:47:46
 	 * @param id
 	 * @return

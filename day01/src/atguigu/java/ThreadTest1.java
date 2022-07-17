@@ -17,8 +17,7 @@ package atguigu.java;
  * 联系：public class Thread implements Runnable
  * 相同点：两种方式都需要重写run(),将线程要执行的逻辑声明在run()中。
  *
- * @author shkstart
- * @create 2019-02-13 下午 4:34
+
  */
 //1. 创建一个实现了Runnable接口的类
 class MThread implements Runnable{

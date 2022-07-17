@@ -27,10 +27,6 @@ package atguigu.java;
  *
  *   说明：高优先级的线程要抢占低优先级线程cpu的执行权。但是只是从概率上讲，高优先级的线程高概率的情况下
  *   被执行。并不意味着只有当高优先级的线程执行完以后，低优先级的线程才执行。
- *
- *
- * @author shkstart
- * @create 2019-02-13 下午 2:26
  */
 class HelloThread extends Thread{
     @Override

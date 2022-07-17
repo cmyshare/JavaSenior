@@ -3,7 +3,7 @@ package com.atguigu.java;
 import org.junit.Test;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:23
  */
 public class IDEADebug {

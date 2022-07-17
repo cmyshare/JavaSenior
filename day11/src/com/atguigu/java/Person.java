@@ -1,7 +1,7 @@
 package com.atguigu.java;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 10:38
  */
 public class Person {

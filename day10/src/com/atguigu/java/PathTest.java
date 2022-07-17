@@ -15,7 +15,7 @@ import java.nio.file.Paths;
  * static Path get(String first, String … more) : 用于将多个字符串串连成路径
  * static Path get(URI uri): 返回指定uri对应的Path路径
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 2:44
  */
 public class PathTest {

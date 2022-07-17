@@ -1,7 +1,7 @@
 package com.atguigu.bean;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:59
  */
 public class Person {

@@ -14,7 +14,7 @@ import java.net.Socket;
  * 实现TCP的网络编程
  * 例子1：客户端发送信息给服务端，服务端将数据显示在控制台上
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:30
  */
 public class TCPTest1 {
