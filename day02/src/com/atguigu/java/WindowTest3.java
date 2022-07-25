@@ -9,7 +9,7 @@ package com.atguigu.java;
  *  2. 非静态的同步方法，同步监视器是：this
  *     静态的同步方法，同步监视器是：当前类本身
  *
- * @author shkstart
+ * @author cmy
  * @create 2019-02-15 上午 11:35
  */
 

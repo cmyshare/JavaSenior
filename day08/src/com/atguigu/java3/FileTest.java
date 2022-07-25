@@ -21,6 +21,7 @@ public class FileTest {
         File(String filePath)
         File(String parentPath,String childPath)
         File(File parentFile,String childPath)
+
     2.
     相对路径：相较于某个路径下，指明的路径。
     绝对路径：包含盘符在内的文件或文件目录的路径
@@ -33,13 +34,13 @@ public class FileTest {
     public void test1(){
         //构造器1
         File file1 = new File("hello.txt");//相对于当前module
-        File file2 =  new File("G:\\IDEA2022\\workmenu\\JavaSenior\\day08\\src\\workspace_idea1\\JavaSenior\\he.txt");
+        File file2 =  new File("D:\\workspace_idea1\\JavaSenior\\day08\\he.txt");
 
         System.out.println(file1);
         System.out.println(file2);
 
         //构造器2：
-        File file3 = new File("G:\\IDEA2022\\workmenu\\JavaSenior\\day08\\src\\workspace_idea1","JavaSenior");
+        File file3 = new File("D:\\workspace_idea1","JavaSenior");
         System.out.println(file3);
 
         //构造器3：

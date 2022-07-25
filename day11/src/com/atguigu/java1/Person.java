@@ -1,7 +1,7 @@
 package com.atguigu.java1;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:12
  */
 @MyAnnotation(value="hi")

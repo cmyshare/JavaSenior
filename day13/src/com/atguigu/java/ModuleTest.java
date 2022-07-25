@@ -3,7 +3,7 @@ package com.atguigu.java;
 import com.atguigu.bean.Person;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:59
  */
 public class ModuleTest {

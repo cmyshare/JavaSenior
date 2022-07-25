@@ -9,7 +9,7 @@ import com.atguigu.team.service.TeamException;
 /**
  * 对NameListService类的测试
  * @Description 
- * @author shkstart  Email:shkstart@126.com
+ * @author cmy  Email:shkstart@126.com
  * @version 
  * @date 2019年2月12日上午11:09:14
  *

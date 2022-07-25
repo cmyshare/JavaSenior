@@ -1,11 +1,10 @@
 package com.atguigu.java1;
 
 import java.lang.annotation.*;
-
 import static java.lang.annotation.ElementType.*;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:56
  */
 @Inherited

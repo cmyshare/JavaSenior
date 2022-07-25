@@ -1,7 +1,7 @@
 package com.atguigu.java;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019-02-15 上午 11:15
  */
 /**
@@ -11,7 +11,7 @@ package com.atguigu.java;
  *
  * 说明：在继承Thread类创建多线程的方式中，慎用this充当同步监视器，考虑使用当前类充当同步监视器。
  *
- * @author shkstart
+ * @author cmy
  * @create 2019-02-13 下午 4:20
  */
 class Window2 extends Thread{

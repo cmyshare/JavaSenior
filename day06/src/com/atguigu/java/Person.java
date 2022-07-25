@@ -3,7 +3,7 @@ package com.atguigu.java;
 import java.util.Objects;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 10:06
  */
 public class Person {

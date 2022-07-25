@@ -8,7 +8,7 @@ import java.util.Comparator;
 /**
  * Lambda表达式的使用举例
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:30
  */
 public class LambdaTest {

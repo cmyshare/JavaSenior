@@ -2,7 +2,7 @@ package com.atguigu.java1;
 
 /**
  * 自定义函数式接口
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 2:20
  */
 @FunctionalInterface

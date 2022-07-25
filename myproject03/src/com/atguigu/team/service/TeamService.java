@@ -8,7 +8,7 @@ import com.atguigu.team.domain.Programmer;
 /**
  * 
  * @Description 关于开发团队成员的管理：添加、删除等。
- * @author shkstart  Email:shkstart@126.com
+ * @author cmy  Email:shkstart@126.com
  * @version 
  * @date 2019年2月12日上午11:31:32
  *
@@ -26,7 +26,7 @@ public class TeamService {
 	/**
 	 * 
 	 * @Description 获取开发团队中的所有成员
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日上午11:37:23
 	 * @return
 	 */
@@ -40,7 +40,7 @@ public class TeamService {
 	/**
 	 * 
 	 * @Description 将指定的员工添加到开发团队中
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日上午11:41:34
 	 * @param e
 	 * @throws TeamException 
@@ -125,7 +125,7 @@ public class TeamService {
 	/**
 	 * 
 	 * @Description 判断指定的员工是否已经存在于现有的开发团队中
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日上午11:51:02
 	 * @param e
 	 * @return
@@ -141,7 +141,7 @@ public class TeamService {
 	/**
 	 * 
 	 * @Description 从团队中删除成员
-	 * @author shkstart
+	 * @author cmy
 	 * @date 2019年2月12日下午2:38:20
 	 * @param memberId
 	 * @throws TeamException 

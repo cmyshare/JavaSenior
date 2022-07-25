@@ -13,7 +13,7 @@ import java.util.*;
  public void delete(String id)：删除指定 id 对象
 
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:34
  */
 public class DAO<T> {

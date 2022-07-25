@@ -1,8 +1,9 @@
 package com.atguigu.java1;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:58
  */
 public class Student {
+    
 }

@@ -9,8 +9,6 @@ package atguigu.java;
  * <p>
  * 例子：遍历100以内的所有的偶数
  *
- * @author shkstart
- * @create 2019-02-13 上午 11:46
  */
 
 //1. 创建一个继承于Thread类的子类

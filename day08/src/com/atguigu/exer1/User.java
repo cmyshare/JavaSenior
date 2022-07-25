@@ -4,7 +4,7 @@ package com.atguigu.exer1;
  * 定义一个 User 类：
  该类包含：private成员变量（int类型） id，age；（String 类型）name。
 
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:44
  */
 public class User {

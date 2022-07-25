@@ -9,7 +9,7 @@ import java.net.InetAddress;
 
 /**
  * UDPd协议的网络编程
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 4:34
  */
 public class UDPTest {

@@ -17,7 +17,7 @@ import java.util.function.Predicate;
  * 断定型接口 Predicate<T>    boolean test(T t)
  *
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 2:29
  */
 public class LambdaTest2 {

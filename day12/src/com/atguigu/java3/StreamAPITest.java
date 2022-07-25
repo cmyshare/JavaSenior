@@ -30,7 +30,7 @@ import java.util.stream.Stream;
  *
  *  测试Stream的实例化
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 4:25
  */
 public class StreamAPITest {

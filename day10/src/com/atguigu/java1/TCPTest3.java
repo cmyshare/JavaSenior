@@ -11,7 +11,7 @@ import java.net.Socket;
  * 实现TCP的网络编程
  * 例题3：从客户端发送文件给服务端，服务端保存到本地。并返回“发送成功”给客户端。
  * 并关闭相应的连接。
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 4:13
  */
 public class TCPTest3 {

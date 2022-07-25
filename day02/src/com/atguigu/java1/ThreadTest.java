@@ -10,7 +10,7 @@ package com.atguigu.java1;
  * 1）出现死锁后，不会出现异常，不会出现提示，只是所有的线程都处于阻塞状态，无法继续
  * 2）我们使用同步时，要避免出现死锁。
  *
- * @author shkstart
+ * @author cmy
  * @create 2019-02-15 下午 3:20
  */
 public class ThreadTest {

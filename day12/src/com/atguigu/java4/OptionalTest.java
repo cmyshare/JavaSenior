@@ -10,7 +10,7 @@ import java.util.Optional;
  * 常用的方法：ofNullable(T t)
  *            orElse(T t)
  *
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 7:24
  */
 public class OptionalTest {

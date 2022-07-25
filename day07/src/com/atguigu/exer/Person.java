@@ -1,7 +1,7 @@
 package com.atguigu.exer;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 10:50
  */
 public class Person {

@@ -3,7 +3,7 @@ package com.atguigu.java1;
 import java.io.Serializable;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 3:12
  */
 public class Creature<T> implements Serializable {

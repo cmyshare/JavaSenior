@@ -3,10 +3,11 @@ package com.atguigu.java1;
 import java.util.List;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 11:50
  *
  * DAO:data(base) access object
+ * 泛型类、泛型接口、泛型方法的使用
  */
 public class DAO<T> {//表的共性操作的DAO
 
@@ -39,9 +40,8 @@ public class DAO<T> {//表的共性操作的DAO
     }
 
     //泛型方法
-    //举例：获取表中一共有多少条记录？获取最大的员工入职时间？
+    //举例：获取表中一共有多少条记录Long？获取最大的员工入职时间Date？
     public <E> E getValue(){
-
         return null;
     }
 

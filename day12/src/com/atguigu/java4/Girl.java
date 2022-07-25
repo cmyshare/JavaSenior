@@ -1,7 +1,7 @@
 package com.atguigu.java4;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 7:23
  */
 public class Girl {

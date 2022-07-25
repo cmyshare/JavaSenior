@@ -3,7 +3,7 @@ package com.atguigu.exer;
 import org.junit.Test;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 上午 10:07
  */
 public class StringDemo {

@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * @author shkstart
+ * @author cmy
  * @create 2019 下午 4:08
  */
 public class PicTest {
