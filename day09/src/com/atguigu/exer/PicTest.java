@@ -1,4 +1,4 @@
-package com.atguigu.exer;
+    package com.atguigu.exer;
 
 import org.junit.Test;
 
@@ -7,12 +7,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
+ * IO流练习1：图片的加密解密
  * @author cmy
  * @create 2019 下午 4:08
  */
 public class PicTest {
 
-    //图片的加密
+    /**
+     * 图片的加密
+     */
     @Test
     public void test1() {
 
@@ -25,17 +28,16 @@ public class PicTest {
             byte[] buffer = new byte[20];
             int len;
             while ((len = fis.read(buffer)) != -1) {
-                //字节数组进行修改
+                //对字节数组进行修改
                 //错误的
-                //            for(byte b : buffer){
-                //                b = (byte) (b ^ 5);
-                //            }
+                //for(byte b : buffer){
+                //    b = (byte) (b ^ 5);
+                //}
                 //正确的
                 for (int i = 0; i < len; i++) {
                     buffer[i] = (byte) (buffer[i] ^ 5);
                 }
-
-
+                //输出加密后的字节数组
                 fos.write(buffer, 0, len);
             }
         } catch (IOException e) {
@@ -47,7 +49,6 @@ public class PicTest {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }
             if (fis != null) {
                 try {
@@ -55,15 +56,13 @@ public class PicTest {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }
         }
-
-
     }
 
-
-    //图片的解密
+    /**
+     * 图片的解密
+     */
     @Test
     public void test2() {
 
@@ -78,14 +77,15 @@ public class PicTest {
             while ((len = fis.read(buffer)) != -1) {
                 //字节数组进行修改
                 //错误的
-                //            for(byte b : buffer){
-                //                b = (byte) (b ^ 5);
-                //            }
+                //for(byte b : buffer){
+                //    b = (byte) (b ^ 5);
+                //}
                 //正确的
                 for (int i = 0; i < len; i++) {
+                    //异或：将两个数转为二进制逐位比较，同为0，异为1
+                    //解密：m^n^n=m
                     buffer[i] = (byte) (buffer[i] ^ 5);
                 }
-
                 fos.write(buffer, 0, len);
             }
         } catch (IOException e) {
@@ -97,7 +97,6 @@ public class PicTest {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }
             if (fis != null) {
                 try {
@@ -105,10 +104,7 @@ public class PicTest {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }
         }
-
-
     }
 }
