@@ -5,10 +5,6 @@ import java.io.File;
  * 3. 遍历指定目录所有文件名称，包括子文件目录中的文件。
 	拓展1：并计算指定目录占用空间的大小
 	拓展2：删除指定文件目录及其下的所有文件
-
- * @author shkstart 邮箱：shkstart@126.com
- * @version  创建时间：2019年2月23日  上午1:55:31
- *
  */
 public class ListFilesTest {
 
@@ -17,30 +13,40 @@ public class ListFilesTest {
 		/** 打印出指定目录所有文件名称，包括子文件目录中的文件 */
 
 		// 1.创建目录对象
-		File dir = new File("E:\\teach\\01_javaSE\\_尚硅谷Java编程语言\\3_软件");
+		File dir = new File("G:\\IDEA2022\\workmenu\\JavaSenior\\day08\\src\\3_软件");
 
 		// 2.打印目录的子文件
 		printSubFile(dir);
 	}
 
+	/**
+	 * 方式一 递归
+	 * 递归打印目录的子文件绝对路径
+	 * @param dir
+	 */
 	public static void printSubFile(File dir) {
-		// 打印目录的子文件
+		//获取此文件下的所有下级文件/目录
 		File[] subfiles = dir.listFiles();
 
 		for (File f : subfiles) {
-			if (f.isDirectory()) {// 文件目录
+			if (f.isDirectory()) {
+				//是文件目录，递归获取下级
 				printSubFile(f);
-			} else {// 文件
+			} else {
+				//文件绝对路径
 				System.out.println(f.getAbsolutePath());
 			}
 
 		}
 	}
 
-	// 方式二：循环实现
-	// 列出file目录的下级内容，仅列出一级的话
-	// 使用File类的String[] list()比较简单
-	public void listSubFiles(File file) {
+	/**
+	 * 	方式二：循环实现
+	 * 	列出file目录的下级内容，仅列出一级的话
+	 * 	使用File类的String[] list()比较简单
+	 * @param file
+	 */
+	public static void listSubFiles(File file) {
 		if (file.isDirectory()) {
 			String[] all = file.list();
 			for (String s : all) {
