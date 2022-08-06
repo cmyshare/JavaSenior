@@ -6,8 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author cmy
- * @create 2019 下午 4:56
+ * 利用File构造器新建一个文件目录
  */
 public class FileDemo {
 
