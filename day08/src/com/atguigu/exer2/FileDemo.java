@@ -9,7 +9,6 @@ import java.io.IOException;
  * 利用File构造器新建一个文件目录
  */
 public class FileDemo {
-
     @Test
     public void test1() throws IOException {
         File file = new File("D:\\io\\io1\\hello.txt");
