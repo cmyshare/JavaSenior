@@ -15,77 +15,103 @@ import java.io.*;
  * 3. 解码：字节、字节数组  --->字符数组、字符串
  *    编码：字符数组、字符串 ---> 字节、字节数组
  *
- *
  * 4.字符集
- *ASCII：美国标准信息交换码。
-    用一个字节的7位可以表示。
- ISO8859-1：拉丁码表。欧洲码表
-    用一个字节的8位表示。
- GB2312：中国的中文编码表。最多两个字节编码所有字符
- GBK：中国的中文编码表升级，融合了更多的中文文字符号。最多两个字节编码
- Unicode：国际标准码，融合了目前人类使用的所有字符。为每个字符分配唯一的字符码。所有的文字都用两个字节来表示。
- UTF-8：变长的编码方式，可用1-4个字节来表示一个字符。
-
- *
- *
- * @author cmy
- * @create 2019 下午 4:25
+ * ASCII：美国标准信息交换码。用一个字节的7位可以表示。
+ * ISO8859-1：拉丁码表。欧洲码表用一个字节的8位表示。
+ * GB2312：中国的中文编码表。最多两个字节编码所有字符。
+ * GBK：中国的中文编码表升级，融合了更多的中文文字符号。以开头0/1区分存储1/2个字节，最多两个字节编码。
+ * Unicode：国际标准码，融合了目前人类使用的所有字符。为每个字符分配唯一的字符码。所有的文字都用两个字节来表示。
+ * UTF-8：变长的编码方式，可用1-4个字节来表示一个字符。
  */
 public class InputStreamReaderTest {
 
-    /*
-    此时处理异常的话，仍然应该使用try-catch-finally
-    InputStreamReader的使用，实现字节的输入流到字符的输入流的转换
+    /**
+     * 文件解码：加入内存看
+     * InputStreamReader的使用，实现字节的输入流到字符的输入流的转换
+     * 此时处理异常的话，仍然应该使用try-catch-finally
      */
     @Test
-    public void test1() throws IOException {
+    public void test1(){
+        InputStreamReader isr = null;
+        try {
+            //实例化字节输入流
+            FileInputStream fis = new FileInputStream("dbcp.txt");
+            //使用系统默认的字符集
+            //InputStreamReader isr = new InputStreamReader(fis);
+            //参数2指明了字符集，具体使用哪个字符集，取决于文件dbcp.txt保存时使用的字符集
+            isr = new InputStreamReader(fis,"UTF-8");
 
-        FileInputStream fis = new FileInputStream("dbcp.txt");
-//        InputStreamReader isr = new InputStreamReader(fis);//使用系统默认的字符集
-        //参数2指明了字符集，具体使用哪个字符集，取决于文件dbcp.txt保存时使用的字符集
-        InputStreamReader isr = new InputStreamReader(fis,"UTF-8");//使用系统默认的字符集
-
-        char[] cbuf = new char[20];
-        int len;
-        while((len = isr.read(cbuf)) != -1){
-            String str = new String(cbuf,0,len);
-            System.out.print(str);
+            char[] cbuf = new char[20];
+            int len;
+            //循环遍历读取到cbuf中
+            while((len = isr.read(cbuf)) != -1){
+                //将读取结果放入String
+                String str = new String(cbuf,0,len);
+                System.out.print(str);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (isr!=null){
+                try {
+                    isr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-
-        isr.close();
-
-    }
-
-    /*
-    此时处理异常的话，仍然应该使用try-catch-finally
-
-    综合使用InputStreamReader和OutputStreamWriter
-     */
-    @Test
-    public void test2() throws Exception {
-        //1.造文件、造流
-        File file1 = new File("dbcp.txt");
-        File file2 = new File("dbcp_gbk.txt");
-
-        FileInputStream fis = new FileInputStream(file1);
-        FileOutputStream fos = new FileOutputStream(file2);
-
-        InputStreamReader isr = new InputStreamReader(fis,"utf-8");
-        OutputStreamWriter osw = new OutputStreamWriter(fos,"gbk");
-
-        //2.读写过程
-        char[] cbuf = new char[20];
-        int len;
-        while((len = isr.read(cbuf)) != -1){
-            osw.write(cbuf,0,len);
-        }
-
-        //3.关闭资源
-        isr.close();
-        osw.close();
-
-
     }
 
 
+    /**
+     * 文件编码，将utf-8转换成gbk，加入磁盘存
+     * 综合使用InputStreamReader和OutputStreamWriter
+     * InputStreamReader实现将字节的输入流按指定字符集转换为字符的输入流
+     * OutputStreamWriter实现将字符的输出流按指定字符集转换为字节的输出流
+     */
+    @Test
+    public void test2(){
+        InputStreamReader isr = null;
+        OutputStreamWriter osw = null;
+        try {
+            //1.造文件、造流
+            File file1 = new File("dbcp.txt");
+            File file2 = new File("dbcp_gbk.txt");
+
+            //定义字节输入流、输出流
+            FileInputStream fis = new FileInputStream(file1);
+            FileOutputStream fos = new FileOutputStream(file2);
+            //InputStreamReader转换流
+            isr = new InputStreamReader(fis,"utf-8");
+            //OutputStreamWriter转换流
+            osw = new OutputStreamWriter(fos,"gbk");
+
+            //2.读写过程
+            char[] cbuf = new char[20];
+            int len;
+            //输入转换流循环遍历读
+            while((len = isr.read(cbuf)) != -1){
+                //输出转换流循环白遍历写
+                osw.write(cbuf,0,len);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            //3.关闭资源
+            if (isr!=null){
+                try {
+                    isr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (osw!=null){
+                try {
+                    osw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }

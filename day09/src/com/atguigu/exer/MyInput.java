@@ -4,14 +4,15 @@ package com.atguigu.exer;
 
 import java.io.*;
 
+/**
+ * 自定义编写读取类似Scanner的标准输入工具类
+ */
 public class MyInput {
     // Read a string from the keyboard
     public static String readString() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         // Declare and initialize the string
         String string = "";
-
         // Get the string from the keyboard
         try {
             string = br.readLine();
@@ -19,7 +20,6 @@ public class MyInput {
         } catch (IOException ex) {
             System.out.println(ex);
         }
-
         // Return the string obtained from the keyboard
         return string;
     }
