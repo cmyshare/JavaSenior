@@ -4,25 +4,22 @@ import java.io.Serializable;
 
 /**
  * Person需要满足如下的要求，方可序列化
- * 1.需要实现接口：Serializable
+ * 1.需要实现接口：Serializable标识接口
  * 2.当前类提供一个全局常量：serialVersionUID
- * 3.除了当前Person类需要实现Serializable接口之外，还必须保证其内部所有属性
- *   也必须是可序列化的。（默认情况下，基本数据类型可序列化）
- *
+ * 3.除了当前Person类需要实现Serializable接口之外，
+ * 还必须保证其内部所有属性是可序列化的。（默认情况下，基本数据类型可序列化）
  *
  * 补充：ObjectOutputStream和ObjectInputStream不能序列化static和transient修饰的成员变量
- *
- *
- * @author cmy
- * @create 2019 上午 10:38
  */
-public class Person implements Serializable{
-
+public class Person implements Serializable {
+    //序列化唯一标识，控制类序列化版本还原
     public static final long serialVersionUID = 475463534532L;
 
     private String name;
-    private int age;
-    private int id;
+    //static不归对象所有，归类所有
+    private static int age;
+    //transient不让序列化对象属性
+    private transient int id;
     private Account acct;
 
     public Person(String name, int age, int id) {
@@ -83,7 +80,7 @@ public class Person implements Serializable{
     }
 }
 
-class Account implements Serializable{
+class Account implements Serializable {
     public static final long serialVersionUID = 4754534532L;
     private double balance;
 

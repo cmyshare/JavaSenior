@@ -101,7 +101,7 @@ public class OtherStreamTest {
      * 3. 数据流
      * 3.1 DataInputStream 和 DataOutputStream
      * 3.2 作用：用于读取或写出基本数据类型的变量或字符串
-     * 练习：将内存中的字符串、基本数据类型的变量写出到文件中。
+     * 练习：DataOutputStream将内存中的字符串、基本数据类型的变量写出到文件中。
      * 注意：处理异常的话，仍然应该使用try-catch-finally.
      */
     @Test
