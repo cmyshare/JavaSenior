@@ -9,17 +9,16 @@ import java.lang.reflect.Modifier;
 /**
  * 获取当前运行时类的属性结构
  *
- * @author cmy
- * @create 2019 下午 3:23
  */
 public class FieldTest {
 
+    /**
+     * 获取属性结构
+     */
     @Test
     public void test1(){
-
+        //通过类的class属性，获取此类的Class类对象
         Class clazz = Person.class;
-
-        //获取属性结构
         //getFields():获取当前运行时类及其父类中声明为public访问权限的属性
         Field[] fields = clazz.getFields();
         for(Field f : fields){
@@ -34,7 +33,9 @@ public class FieldTest {
         }
     }
 
-    //权限修饰符  数据类型 变量名
+    /**
+     * 获取属性的权限修饰符、数据类型、变量名
+     */
     @Test
     public void test2(){
         Class clazz = Person.class;
@@ -42,6 +43,7 @@ public class FieldTest {
         for(Field f : declaredFields){
             //1.权限修饰符
             int modifier = f.getModifiers();
+            //默认权限，什么都没有
             System.out.print(Modifier.toString(modifier) + "\t");
 
             //2.数据类型
@@ -54,9 +56,5 @@ public class FieldTest {
 
             System.out.println();
         }
-
-
     }
-
-
 }

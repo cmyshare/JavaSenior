@@ -39,6 +39,7 @@ public class Person {
         this.age = age;
     }
 
+    //私有构造器
     private Person(String name) {
         this.name = name;
     }

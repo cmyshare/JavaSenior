@@ -10,14 +10,15 @@ import java.lang.reflect.Modifier;
 /**
  * 获取运行时类的方法结构
  *
- * @author cmy
- * @create 2019 下午 3:37
  */
 public class MethodTest {
 
+    /**
+     * 获取运行时类的方法
+     */
     @Test
     public void test1(){
-
+        //获取Class运行时类对象
         Class clazz = Person.class;
 
         //getMethods():获取当前运行时类及其所有父类中声明为public权限的方法
@@ -33,13 +34,15 @@ public class MethodTest {
         }
     }
 
-    /*
-    @Xxxx
-    权限修饰符  返回值类型  方法名(参数类型1 形参名1,...) throws XxxException{}
+    /**
+     * @获取注解，注意注解的生命周期
+     * 获取方法的权限修饰符、返回值类型、方法名(参数类型1 形参名1,...)、throws XxxException{}
      */
     @Test
     public void test2(){
+        //获取运行时类对象Class
         Class clazz = Person.class;
+        //获取方法
         Method[] declaredMethods = clazz.getDeclaredMethods();
         for(Method m : declaredMethods){
             //1.获取方法声明的注解
@@ -56,21 +59,21 @@ public class MethodTest {
 
             //4.方法名
             System.out.print(m.getName());
-            System.out.print("(");
+
             //5.形参列表
+            System.out.print("(");
             Class[] parameterTypes = m.getParameterTypes();
+            //判断此方法是否有形参
             if(!(parameterTypes == null && parameterTypes.length == 0)){
                 for(int i = 0;i < parameterTypes.length;i++){
-
+                    //判断是否为最后一个形参
                     if(i == parameterTypes.length - 1){
                         System.out.print(parameterTypes[i].getName() + " args_" + i);
                         break;
                     }
-
                     System.out.print(parameterTypes[i].getName() + " args_" + i + ",");
                 }
             }
-
             System.out.print(")");
 
             //6.抛出的异常
@@ -78,20 +81,17 @@ public class MethodTest {
             if(exceptionTypes.length > 0){
                 System.out.print("throws ");
                 for(int i = 0;i < exceptionTypes.length;i++){
+                    //判断是否为最后一个异常
                     if(i == exceptionTypes.length - 1){
                         System.out.print(exceptionTypes[i].getName());
                         break;
                     }
-
                     System.out.print(exceptionTypes[i].getName() + ",");
                 }
             }
 
-
+            //换行
             System.out.println();
         }
-
-
-
     }
 }

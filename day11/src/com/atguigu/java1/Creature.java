@@ -3,8 +3,7 @@ package com.atguigu.java1;
 import java.io.Serializable;
 
 /**
- * @author cmy
- * @create 2019 下午 3:12
+ * 定义父类
  */
 public class Creature<T> implements Serializable {
     private char gender;

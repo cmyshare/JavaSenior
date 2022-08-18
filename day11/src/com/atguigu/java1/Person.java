@@ -1,10 +1,11 @@
 package com.atguigu.java1;
 
 /**
- * @author cmy
- * @create 2019 下午 3:12
+ * 定义子类
+ * 继承父类<泛型>，实现比较器Comparable，实现自定义接口
  */
-@MyAnnotation(value="hi")
+
+@MyAnnotation(value="hi") //使用注解修饰类
 public class Person extends Creature<String> implements Comparable<String>,MyInterface{
 
     private String name;
@@ -13,7 +14,7 @@ public class Person extends Creature<String> implements Comparable<String>,MyInt
 
     public Person(){}
 
-    @MyAnnotation(value="abc")
+    @MyAnnotation(value="abc") //使用注解修饰构造器
     private Person(String name){
         this.name = name;
     }
@@ -22,7 +23,8 @@ public class Person extends Creature<String> implements Comparable<String>,MyInt
         this.name = name;
         this.age = age;
     }
-    @MyAnnotation
+
+    @MyAnnotation //使用注解修饰方法
     private String show(String nation){
         System.out.println("我的国籍是：" + nation);
         return nation;
@@ -40,9 +42,11 @@ public class Person extends Creature<String> implements Comparable<String>,MyInt
 
     @Override
     public int compareTo(String o) {
-        return 0;
+        //按照person对象的name排序，默认小于0升序，大于0降序
+        return this.name.compareTo(o);
     }
 
+    //静态方法
     private static void showDesc(){
         System.out.println("我是一个可爱的人");
     }

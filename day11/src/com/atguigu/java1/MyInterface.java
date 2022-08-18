@@ -1,8 +1,7 @@
 package com.atguigu.java1;
 
 /**
- * @author cmy
- * @create 2019 下午 3:15
+ * 自定义接口
  */
 
 public interface MyInterface {
