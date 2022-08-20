@@ -1,8 +1,7 @@
 package com.atguigu.java4;
 
 /**
- * @author cmy
- * @create 2019 下午 7:22
+ * 男孩实体Boy
  */
 public class Boy {
     private Girl girl;
@@ -23,11 +22,9 @@ public class Boy {
     }
 
     public Boy() {
-
     }
 
     public Boy(Girl girl) {
-
         this.girl = girl;
     }
 }

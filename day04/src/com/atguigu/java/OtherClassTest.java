@@ -50,6 +50,5 @@ public class OtherClassTest {
 //         System.out.println(bd.divide(bd2));
         System.out.println(bd.divide(bd2, BigDecimal.ROUND_HALF_UP));
         System.out.println(bd.divide(bd2, 25, BigDecimal.ROUND_HALF_UP));
-
     }
 }

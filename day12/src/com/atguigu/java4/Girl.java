@@ -1,8 +1,7 @@
 package com.atguigu.java4;
 
 /**
- * @author cmy
- * @create 2019 下午 7:23
+ * 女孩实体Girl
  */
 public class Girl {
 
@@ -24,11 +23,9 @@ public class Girl {
     }
 
     public Girl() {
-
     }
 
     public Girl(String name) {
-
         this.name = name;
     }
 }

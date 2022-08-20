@@ -3,10 +3,7 @@ package com.atguigu.java2;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * 提供用于测试的数据
- * 
- * @author cmy 邮箱：shkstart@126.com
- *
+ * 提供用于测试的员工数据
  */
 public class EmployeeData {
 	
