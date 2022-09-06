@@ -27,13 +27,10 @@ class Bank{
 //        }
         //方式二：效率更高
         if(instance == null){
-
             synchronized (Bank.class) {
                 if(instance == null){
-
                     instance = new Bank();
                 }
-
             }
         }
         return instance;

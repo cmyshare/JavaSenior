@@ -50,6 +50,7 @@ public class ThreadPool {
     public static void main(String[] args) {
         //1. 提供指定线程数量的线程池
         ExecutorService service = Executors.newFixedThreadPool(10);
+        //线程池执行器
         ThreadPoolExecutor service1 = (ThreadPoolExecutor) service;
         //设置线程池的属性
 //        System.out.println(service.getClass());
