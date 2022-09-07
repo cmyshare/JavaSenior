@@ -5,7 +5,9 @@ import org.junit.Test;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -17,6 +19,53 @@ import java.util.Scanner;
 public class LeetCodeIO {
 
     public static void main(String[] args) {
+
+        List<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        List<Integer> list1=new ArrayList<>();
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(4);
+        list1.add(5);
+
+        //1 2 3 4 5   2
+        //4 5 1 2     0
+        //2 4 5       2
+        //2 4
+        //4
+        int number=1;
+        int length=list.size();
+        while (length!=1){
+            if(length>=3){
+                if(number%3==0){
+                    list.remove(2);
+                    if(length>3){
+                        list.clear();
+                        list.addAll(list1.subList(3,length));
+                        list.addAll(list1.subList(0,3));
+
+                        list1.clear();
+                        list1.addAll(list);
+                    }
+                }
+                number++;
+            }else{
+                //从左第1个删除起
+                list.remove(0);
+            }
+            length=list.size();
+        }
+
+        System.out.println(list);
+        //list.stream().forEach(System.out::print);
+
+
         //1、BufferedReader_read()在控制台标准输入中读取一个字符
         //BufferedReader_read();
 
@@ -38,7 +87,7 @@ public class LeetCodeIO {
         //Scanner_TwoArray();
 
         //7、Scanner换行读取数字、字符串、字符串数组(包含空格)，字符串分割为数组
-        Scanner_IntStringArraySpace();
+        //Scanner_IntStringArraySpace();
     }
 
     /**
