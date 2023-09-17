@@ -30,7 +30,7 @@ day10 Files工具类、IO工具类FileUtils、AIO异步非阻塞IO、BIO同步�
 day11 类的加载器ClassLoader、反射、反射融合注解、获取运行时类的属性结构、获取运行时类的方法结构、获取运行时类的其他结构、
       调用运行时类中指定的结构：属性、方法、构造器、静态与非静态
 
-day12 静态代理举例、动态代理举例、Lambda表达式、4大核心函数式接口、自定义函数式接口、构造器引用/数组引用、方法引用的使用、Stream、Optional类
+day12 静态代理举例、动态代理举例、Lambda表达式、4大核心函数式接口、自定义函数式接口、构造器引用/数组引用、方法引用的使用、Stream、Optional类、CompletableFuture
 
 day13 Java9特性、Java10特性、Java11特性
 
