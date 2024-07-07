@@ -1,6 +1,7 @@
 package com.cmyshare.java;
 
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class HelloWorld {
@@ -19,5 +20,12 @@ public class HelloWorld {
         String a = "abcdefgaba";
         StringBuilder stringBuilder = new StringBuilder(a);
         System.out.println(stringBuilder);
+
+        LocalDate start = LocalDate.now();
+        int quarter = (start.getMonthValue()-1)/3 + 1;
+
+        start = start.withMonth(quarter*3 - 2*quarter);
+        System.out.println(9);
+        System.out.println(start);
     }
 }

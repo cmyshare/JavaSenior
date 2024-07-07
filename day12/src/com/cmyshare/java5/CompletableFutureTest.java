@@ -11,6 +11,13 @@ import java.util.concurrent.*;
 public class CompletableFutureTest {
 
     /**
+     * 参考链接
+     * https://juejin.cn/post/6970558076642394142#heading-11
+     * https://juejin.cn/post/6914962224029106190#heading-7
+     * https://cloud.tencent.com/developer/article/2276734
+     */
+
+    /**
      * ThreadPoolExecutor创建线程池
      */
     private static ThreadPoolExecutor executor = new ThreadPoolExecutor(
