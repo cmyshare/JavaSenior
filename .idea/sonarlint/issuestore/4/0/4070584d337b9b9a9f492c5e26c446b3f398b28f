@@ -1,0 +1,17 @@
+
+d
+java:S2095S"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(¢Ïòø
+c
+java:S2095&"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ý¿¬Þ
+c
+java:S2095R"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¤ÆÝ½
+V	java:S125("<This block of commented-out lines of code should be removed.(¨…û­ùÿÿÿÿ
+T
+java:S4719*"9Replace charset name argument with StandardCharsets.UTF_8(Á‹êüùÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(…Ÿ¥’
+E
+java:S2093$"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+T
+java:S4719U"9Replace charset name argument with StandardCharsets.UTF_8(Ù˜‹Îøÿÿÿÿ
+E
+java:S2093L"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ

@@ -1,0 +1,10 @@
+
+N	java:S106""9Replace this use of System.out or System.err by a logger.(…Ÿ¥’
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+E
+java:S2093;"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+E
+java:S2093d"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(‘¼µ°üÿÿÿÿ
+T	java:S106—"9Replace this use of System.out or System.err by a logger.(Åçûÿÿÿÿ

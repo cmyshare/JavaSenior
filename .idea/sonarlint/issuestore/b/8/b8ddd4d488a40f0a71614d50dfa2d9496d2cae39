@@ -1,0 +1,21 @@
+
+`
+java:S1192"JDefine a constant instead of duplicating this literal "hello.txt" 4 times.(Ëß‡„
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†ç£â
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ò„Ù∫
+Q	java:S125;"<This block of commented-out lines of code should be removed.(¯æØ›
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(…∏û¶˚ˇˇˇˇ
+V	java:S125J"<This block of commented-out lines of code should be removed.(Ò•˘ö¯ˇˇˇˇ
+E
+java:S20932"*Change this "try" to a try-with-resources.(°ª¢¸˘ˇˇˇˇ
+V	java:S125o"<This block of commented-out lines of code should be removed.(„÷„≈¯ˇˇˇˇ
+V	java:S125y"<This block of commented-out lines of code should be removed.(õõ¬ê˙ˇˇˇˇ
+N	java:S106}"9Replace this use of System.out or System.err by a logger.(Öü•í
+E
+java:S2093`"*Change this "try" to a try-with-resources.(°ª¢¸˘ˇˇˇˇ
+F
+java:S2093ú"*Change this "try" to a try-with-resources.(°ª¢¸˘ˇˇˇˇ
+W	java:S125√"<This block of commented-out lines of code should be removed.(›Õª¥¯ˇˇˇˇ
+W	java:S125◊"<This block of commented-out lines of code should be removed.(Ò•˘ö¯ˇˇˇˇ
+F
+java:S2093Ω"*Change this "try" to a try-with-resources.(°ª¢¸˘ˇˇˇˇ

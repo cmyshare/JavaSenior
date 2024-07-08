@@ -1,0 +1,20 @@
+
+`	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(ÙÓÆøúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Óèñ¦øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(é²óûþÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.( ’§á
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(£²½ üÿÿÿÿ
+P	java:S1251"<This block of commented-out lines of code should be removed.(‚è¾
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(öÃÏú
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+\
+java:S1128"ARemove this unused import 'java.util.concurrent.ExecutorService'.(æ÷–£ùÿÿÿÿ
+V
+java:S1128	";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ
+Z
+java:S1128"DRemove this unused import 'java.util.concurrent.ThreadPoolExecutor'.(¦ÿöÊ
+P
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™þ

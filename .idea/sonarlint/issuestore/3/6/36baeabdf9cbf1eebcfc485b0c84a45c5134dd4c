@@ -1,0 +1,88 @@
+
+g	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(ÙÓÆøúÿÿÿÿ8óÓëÒ1
+E
+java:S3740("/Provide the parametrized type for this generic.(ÉÄİÙ
+D
+java:S3740+"/Provide the parametrized type for this generic.(ÊÛğc
+J
+java:S3740A"/Provide the parametrized type for this generic.(üö¼õÿÿÿÿÿ
+E
+java:S3740r"/Provide the parametrized type for this generic.(×Ê»»
+J
+java:S3740v"/Provide the parametrized type for this generic.(ó¯•³ùÿÿÿÿ
+E
+java:S3740z"/Provide the parametrized type for this generic.(Ñó½Ê
+K
+java:S3740"/Provide the parametrized type for this generic.(¤Á·Àüÿÿÿÿ
+F
+java:S3740™"/Provide the parametrized type for this generic.(õû¤é
+K
+java:S3740›"/Provide the parametrized type for this generic.(æ¾·ëøÿÿÿÿ
+K
+java:S3740"/Provide the parametrized type for this generic.(Ïø‡ûÿÿÿÿ
+E
+java:S3740Ÿ"/Provide the parametrized type for this generic.(–¯ÆD
+E
+java:S3740¡"/Provide the parametrized type for this generic.(»”®.
+E
+java:S3740£"/Provide the parametrized type for this generic.(ºõ½=
+F
+java:S3740¥"/Provide the parametrized type for this generic.(Èãˆí
+K
+java:S3740§"/Provide the parametrized type for this generic.(¥»¤¸øÿÿÿÿ
+F
+java:S3740©"/Provide the parametrized type for this generic.(û¥‚Á
+K
+java:S3740­"/Provide the parametrized type for this generic.(‚¸Î”ıÿÿÿÿ
+F
+java:S3740®"/Provide the parametrized type for this generic.(ãéÜ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Óä‹ü
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(ö™µ–úÿÿÿÿ
+G
+java:S30117",This accessibility bypass should be removed.(ˆ›ßíÿÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(ö™µ–úÿÿÿÿ
+G
+java:S3011C",This accessibility update should be removed.(—²Š„ùÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(¨ô¢¨ıÿÿÿÿ
+A
+java:S3011J",This accessibility update should be removed.(ºÓüE
+A
+java:S3011K",This accessibility bypass should be removed.(Íò0
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(¨ô¢¨ıÿÿÿÿ
+B
+java:S3011Q",This accessibility update should be removed.(Ìƒöä
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(ñ—‘
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(©–áüÿÿÿÿ
+]
+java:S2133u"@Remove this object instantiation and use "Person.class" instead.(ûóÚÅ8“ÔëÒ1
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(¹‚İÛıÿÿÿÿ
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(†È´‡ùÿÿÿÿ
+P	java:S125{"<This block of commented-out lines of code should be removed.(«µˆ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(úŸßà
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(ÎÊ´£ûÿÿÿÿ
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(Óèñ¦øÿÿÿÿ
+O	java:S106Š"9Replace this use of System.out or System.err by a logger.( ’§á
+T	java:S106‹"9Replace this use of System.out or System.err by a logger.(£²½ üÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(¿ü©Ã
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Àåñııÿÿÿÿ
+>
+java:S1481™"'Remove this unused "c1" local variable.(õû¤é
+C
+java:S1481›"'Remove this unused "c2" local variable.(æ¾·ëøÿÿÿÿ
+C
+java:S1481"'Remove this unused "c3" local variable.(Ïø‡ûÿÿÿÿ
+=
+java:S1481Ÿ"'Remove this unused "c4" local variable.(–¯ÆD
+=
+java:S1481¡"'Remove this unused "c5" local variable.(»”®.
+=
+java:S1481£"'Remove this unused "c6" local variable.(ºõ½=
+>
+java:S1481¥"'Remove this unused "c7" local variable.(Èãˆí
+C
+java:S1481§"'Remove this unused "c8" local variable.(¥»¤¸øÿÿÿÿ
+>
+java:S1481©"'Remove this unused "c9" local variable.(û¥‚Á
+O	java:S106°"9Replace this use of System.out or System.err by a logger.(Ğúîœ

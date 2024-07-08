@@ -1,0 +1,13 @@
+
+`	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(ÙÓÆøúÿÿÿÿ
+a	java:S112T"FDefine and throw a dedicated exception instead of using a generic one.(‚‡¢n8é„ìÒ1
+D
+java:S3740,"/Provide the parametrized type for this generic.(ÊÛğc
+E
+java:S3740V"/Provide the parametrized type for this generic.(Š‘Ş›
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(Áªø
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(Áªø
+9
+java:S21199"Save and re-use this "Random".(Çûıÿÿÿÿ
+7	java:S131;""Add a default case to this switch.(’ÎÁÄ
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(Áªø

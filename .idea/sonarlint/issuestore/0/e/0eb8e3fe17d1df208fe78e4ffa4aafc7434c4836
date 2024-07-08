@@ -1,0 +1,32 @@
+
+e
+java:S1192"JDefine a constant instead of duplicating this literal "hello.txt" 3 times.(ÁˆÜÙùÿÿÿÿ
+c
+java:S2095i"MUse try-with-resources or close this "DirectoryStream" in a "finally" clause.(øÃëÈ
+_
+java:S2095_"IUse try-with-resources or close this "InputStream" in a "finally" clause.(½™½Ü
+l
+java:S2095e"QUse try-with-resources or close this "SeekableByteChannel" in a "finally" clause.(¸È€Üúÿÿÿÿ
+`
+java:S2095b"JUse try-with-resources or close this "OutputStream" in a "finally" clause.(¢¶ˆ¼
+E
+java:S1481("*Remove this unused "path4" local variable.(™ëþÑûÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(ÍÖÍ³
+V	java:S125,"<This block of commented-out lines of code should be removed.(æˆ”Çþÿÿÿÿ
+V	java:S1253"<This block of commented-out lines of code should be removed.(Éš¿ãøÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(–ÝÅ
+‚
+java:S1130<"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¸áà—
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(­©­þûÿÿÿÿ
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(àÒÔá
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(îâÉÙüÿÿÿÿ
+V	java:S125J"<This block of commented-out lines of code should be removed.(³›Ìøÿÿÿÿ
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(­õ¦â
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(“ïðÎûÿÿÿÿ
+F
+java:S1481_"0Remove this unused "inputStream" local variable.(½™½Ü
+G
+java:S1481b"1Remove this unused "outputStream" local variable.(¢¶ˆ¼
+G
+java:S1481e",Remove this unused "channel" local variable.(¸È€Üúÿÿÿÿ
+S	java:S106l"9Replace this use of System.out or System.err by a logger.(¡¹—Òøÿÿÿÿ

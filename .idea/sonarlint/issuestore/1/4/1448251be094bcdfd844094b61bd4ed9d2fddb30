@@ -1,0 +1,68 @@
+
+k
+java:S1192("PDefine a constant instead of duplicating this literal "å½“å‰çº¿ç¨‹ï¼š" 4 times.(üÔæÅøÿÿÿÿ
+k
+java:S1192*"PDefine a constant instead of duplicating this literal "è¿è¡Œç»“æœï¼š" 4 times.(’Û†‹şÿÿÿÿ
+z
+java:S1192"cDefine a constant instead of duplicating this literal "ä»»åŠ¡3å¼€å§‹...ä¹‹å‰çš„ç»“æœï¼š" 4 times.(ıáÏ¤
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(®·º”
+S	java:S106("9Replace this use of System.out or System.err by a logger.(üÔæÅøÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(’Û†‹şÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(“Šñ†
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(’ÍÁÑ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(üÔæÅøÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(’Û†‹şÿÿÿÿ
+G
+java:S1602<",Remove useless curly braces around statement(¡´ãªøÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(ğ¦¿
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(ÄğŞ¾øÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(šö½·ıÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(Òüë×ûÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(üÔæÅøÿÿÿÿ
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(’Û†‹şÿÿÿÿ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(ì¬œ²ùÿÿÿÿ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(Õê³çıÿÿÿÿ
+S	java:S106l"9Replace this use of System.out or System.err by a logger.(üÔæÅøÿÿÿÿ
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(’Û†‹şÿÿÿÿ
+S	java:S106q"9Replace this use of System.out or System.err by a logger.(¦‰¿Øúÿÿÿÿ
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(óÅŠŸÿÿÿÿÿ
+N	java:S106w"9Replace this use of System.out or System.err by a logger.(Û­ë­
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(ş«¹ùÿÿÿÿ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(Üáãâşÿÿÿÿ
+N	java:S106†"9Replace this use of System.out or System.err by a logger.(˜è˜
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(â‘ĞÆüÿÿÿÿ
+u
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+O	java:S106"9Replace this use of System.out or System.err by a logger.(İÙ’
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(Şª¯ƒùÿÿÿÿ
+H
+java:S1602—",Remove useless curly braces around statement(Õûá‰üÿÿÿÿ
+T	java:S106˜"9Replace this use of System.out or System.err by a logger.(ŠÉÚ”üÿÿÿÿ
+C
+java:S1602",Remove useless curly braces around statement(ÙÓ‹
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ıáÏ¤
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(üœƒ¬şÿÿÿÿ
+H
+java:S1481¢",Remove this unused "future6" local variable.(¸ÈíĞúÿÿÿÿ
+N	java:S106§"9Replace this use of System.out or System.err by a logger.(ÚÏ?
+C
+java:S1602¯",Remove useless curly braces around statement(Æ‰ ì
+O	java:S106°"9Replace this use of System.out or System.err by a logger.(ÀéÒ€
+M
+java:S1611²"1Remove the parentheses around the "res" parameter(Ş†‚Áüÿÿÿÿ
+H
+java:S1602²",Remove useless curly braces around statement(Ş†‚Áüÿÿÿÿ
+O	java:S106³"9Replace this use of System.out or System.err by a logger.(‰ĞÀ¯
+O	java:S106¶"9Replace this use of System.out or System.err by a logger.(‰ĞÀ¯
+H
+java:S1481µ",Remove this unused "future7" local variable.(ø¨¿‚ûÿÿÿÿ
+O	java:S106»"9Replace this use of System.out or System.err by a logger.(ùëÍ”
+T	java:S106Ã"9Replace this use of System.out or System.err by a logger.(òÙÍºùÿÿÿÿ
+O	java:S106Ç"9Replace this use of System.out or System.err by a logger.(ãÀ™ê
+T	java:S106Ì"9Replace this use of System.out or System.err by a logger.(Ôû¨çúÿÿÿÿ
+u
+java:S2142Ô"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+O	java:S106Ó"9Replace this use of System.out or System.err by a logger.(¬»³ë
+R	java:S125Û"<This block of commented-out lines of code should be removed.(üË‰«
+T	java:S106à"9Replace this use of System.out or System.err by a logger.(‘ñÿùÿÿÿÿ
+W	java:S125ß"<This block of commented-out lines of code should be removed.(ëŸÙƒûÿÿÿÿ

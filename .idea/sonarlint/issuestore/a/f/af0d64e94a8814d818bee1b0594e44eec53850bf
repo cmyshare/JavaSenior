@@ -1,0 +1,20 @@
+
+h
+java:S2095&"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ü†áéúÿÿÿÿ
+h
+java:S2095["MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ü†áéúÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê•Å=
+V	java:S125F"<This block of commented-out lines of code should be removed.(Ô„çùÿÿÿÿ
+E
+java:S2093 "*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+V	java:S125{"<This block of commented-out lines of code should be removed.(Ô„çùÿÿÿÿ
+E
+java:S2093U"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+]
+java:S1075‡"ARefactor your code to get this URI from a customizable parameter.(Çá×üÿÿÿÿ
+]
+java:S1075ˆ"ARefactor your code to get this URI from a customizable parameter.(ÛÏÒºÿÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(Æãž
+W	java:S125Ÿ"<This block of commented-out lines of code should be removed.(Œ°‡¹üÿÿÿÿ
+F
+java:S2093˜"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
