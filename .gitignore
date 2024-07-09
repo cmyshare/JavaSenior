@@ -6,6 +6,7 @@
 !gradle/wrapper/gradle-wrapper.jar
 
 target/
+out/
 !.mvn/wrapper/maven-wrapper.jar
 
 ######################################################################
@@ -39,6 +40,7 @@ nbdist/
 *.log
 *.xml.versionsBackup
 *.swp
+*.class
 
 !*/build/*.java
 !*/build/*.html
