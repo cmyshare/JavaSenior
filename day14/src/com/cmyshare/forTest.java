@@ -28,12 +28,17 @@ public class forTest {
         Category three = new Category();
         three.setId(3L);
         three.setName("three");
-        three.setParentId(2L);
+        three.setParentId(1L);
         categoryList.add(three);
 
-        List<Category> returnList = new ArrayList<>();
+        Category four = new Category();
+        four.setId(4L);
+        four.setName("four");
+        four.setParentId(3L);
+        categoryList.add(four);
 
-        List<Category> sonLinkListById = findSonLinkListById(Collections.singletonList(3L), categoryList, returnList);
+        List<Category> returnList = new ArrayList<>();
+        List<Category> sonLinkListById = findParentLinkListById(Collections.singletonList(4L), categoryList, returnList);
         sonLinkListById.stream().map(Category::getName).forEach(System.out::println);
 
     }
@@ -68,7 +73,6 @@ public class forTest {
                 returnList.add(category);
                 //获取子节点id
                 sonNodeIds.add(category.getId());
-                break;
             }
         }
 
@@ -98,7 +102,6 @@ public class forTest {
                 returnList.add(category);
                 //获取父节点id
                 sonNodeIds.add(category.getParentId());
-                break;
             }
         }
 
