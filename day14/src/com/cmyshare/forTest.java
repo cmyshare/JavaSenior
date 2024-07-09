@@ -1,6 +1,7 @@
 package com.cmyshare;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -32,76 +33,77 @@ public class forTest {
 
         List<Category> returnList = new ArrayList<>();
 
-        List<Category> sonLinkListById = findSonLinkListById(3L, categoryList, returnList);
+        List<Category> sonLinkListById = findSonLinkListById(Collections.singletonList(3L), categoryList, returnList);
         sonLinkListById.stream().map(Category::getName).forEach(System.out::println);
 
     }
 
     /**
-     * 根据当前id查询当前类目及其子类目信息
-     * @param targetId
+     * 根据当前ids查询当前类目及其子类目信息
+     * @param targetIds
      * @param categoryList
+     * @param returnList
      * @return
      */
-    private static List<Category> findSonLinkListById(Long targetId,List<Category> categoryList,List<Category> returnList){
+    private static List<Category> findSonLinkListById(List<Long> targetIds,List<Category> categoryList,List<Category> returnList){
 
         //当子节点为空时，退出递归
-        if (targetId==null || categoryList.isEmpty()){
+        if (targetIds.size()==0 || categoryList.isEmpty()){
             return returnList;
         }
 
         //找当前id节点
         for (Category category : categoryList) {
-            if (targetId.equals(category.getId()) && !returnList.contains(category)){
+            if (targetIds.contains(category.getId()) && !returnList.contains(category)){
                 returnList.add(category);
             }
         }
 
         //找子节点
-        Long sonNodeId=null;
+        List<Long> sonNodeIds=new ArrayList<>();
         for (Category category : categoryList) {
             //找到targetId的子节点退出循环
-            if (targetId.equals(category.getParentId())){
+            if (targetIds.contains(category.getParentId())){
                 //加入子节点
                 returnList.add(category);
                 //获取子节点id
-                sonNodeId=category.getId();
+                sonNodeIds.add(category.getId());
                 break;
             }
         }
 
         //递归调用
-        return findSonLinkListById(sonNodeId,categoryList,returnList);
+        return findSonLinkListById(sonNodeIds,categoryList,returnList);
     }
 
     /**
-     * 根据当前id查询当前类目及其父类目信息
-     * @param targetId
+     * 根据当前ids查询当前类目及其父类目信息
+     * @param targetIds
      * @param categoryList
      * @return
      */
-    private static List<Category> findParentLinkListById(Long targetId,List<Category> categoryList,List<Category> returnList){
+    private static List<Category> findParentLinkListById(List<Long> targetIds,List<Category> categoryList,List<Category> returnList){
 
         //当子节点为空时，退出递归
-        if (targetId==null || categoryList.isEmpty()){
+        if (targetIds.size()==0 || categoryList.isEmpty()){
             return returnList;
         }
 
         //找当前id节点及其父节点
-        Long sonNodeId=null;
+        List<Long> sonNodeIds=new ArrayList<>();
         for (Category category : categoryList) {
             //找到targetId的节点退出循环
-            if (targetId.equals(category.getId())){
+            if (targetIds.contains(category.getId())){
                 //加入节点
                 returnList.add(category);
                 //获取父节点id
-                sonNodeId=category.getParentId();
+                sonNodeIds.add(category.getParentId());
                 break;
             }
         }
 
         //递归调用
-        return findParentLinkListById(sonNodeId,categoryList,returnList);
+        return findParentLinkListById(sonNodeIds,categoryList,returnList);
     }
 
 
