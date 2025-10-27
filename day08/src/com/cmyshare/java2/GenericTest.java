@@ -161,11 +161,18 @@ public class GenericTest {
         //? extends Person写入数据：
         //编译不通过，list1添加的？范围是(-∞,person],如果student比-∞还小，就出错。子类可以赋给父类、父类不可赋给子类
         //list1.add(new Student());
+        //list1.add(null);
 
         //? super Person写入数据：
         //编译通过 list2添加的？范围是[person,+∞)
         list2.add(new Person());
         list2.add(new Student());
+
+
+        //写法	能读吗？	能写吗？	用途
+        //List<? extends Person>	✅ 能读 Person	❌ 不能添加（除 null）	生产者（Producer），只读
+        //List<? super Student>	✅ 能读 Object	✅ 能添加 Student 及其子类	消费者（Consumer），可写
+        //List<Person>	✅	✅	精确类型
     }
 
 }
