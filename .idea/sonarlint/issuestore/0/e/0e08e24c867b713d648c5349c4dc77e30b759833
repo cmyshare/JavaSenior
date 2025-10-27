@@ -1,0 +1,13 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂØÌàøÿÿÿÿ
+l
+java:S2095"OUse try-with-resources or close this "InputStreamReader" in a "finally" clause.(éòñ®8´¸Õ–õ1
+e
+java:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(ı¸’8´¸Õ–õ1
+|
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8µ¸Õ–õ1
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ç•µé8Ğ×–õ1
+V
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(éòñ®8¸¸Õ–õ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(º¡°ñ8¹¸Õ–õ1
